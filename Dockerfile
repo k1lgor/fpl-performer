@@ -6,6 +6,6 @@ COPY . .
 
 RUN pip install uv && uv sync
 
-EXPOSE 8501
+EXPOSE 7860
 
-CMD ["uv", "run", "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["uv", "run", "streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
